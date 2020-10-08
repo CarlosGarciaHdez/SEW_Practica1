@@ -1,0 +1,149 @@
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+body {
+    font: 400 15px Tahoma, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    background-color: #f6f6f6;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+h1 {
+    border: 3px solid black;
+    background-color: darkgreen;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+h2 {
+    border: 3px solid black;
+    background-color: darkgreen;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+ul {
+    list-style: none;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+li {
+    padding: 3px;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+table,
+th,
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+th,
+td {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+th {
+    background-color: darkgreen;
+    color: #fff;
+}
+
+/* a=0 b=0 c=3 -> Especificidad = 3 */
+nav {
+    background-color: darkgreen;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+/* a=0 b=0 c=3 -> Especificidad = 3 */
+nav ul li {
+    display: inline;
+    border: none;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 40%;
+    max-height: 400px;
+}
+
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 80%;
+    padding: 10%;
+}
+
+/* a=0 b=1 c=1 -> Especificidad = 11 */
+a:link , a:visited{
+    padding: 5px;
+    background-color: darkgreen;
+    color: #fff;
+    text-decoration: none;
+}
+/* a=0 b=1 c=1 -> Especificidad = 11 */
+a:hover{
+    border: 2px solid black;
+}
+
+/* a=0 b=0 c=3 -> Especificidad = 3 */
+footer ul li{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* a=0 b=1 c=3 -> Especificidad = 13 */
+footer ul li a:link , footer ul li a:visited{
+    padding: 5px;
+    background-color: darkgreen;
+    color: #fff;
+    border: 3px solid black;
+}
+/* a=0 b=1 c=3 -> Especificidad = 13 */
+footer ul li a:hover{
+    border: 3px solid white;
+}
+/* a=0 b=1 c=2 -> Especificidad = 12 */
+footer a:link, footer a:visited{
+    background: none;
+    text-align: right;
+}
+/* a=0 b=1 c=2 -> Especificidad = 12 */
+footer a:hover{
+    border: none;
+}
+/* a=0 b=0 c=1 -> Especificidad = 1 */
+footer{
+    background-color: #303030;
+    padding: 10px;
+    border: 5px solid black;
+    text-align: right;
+}
+
+/* a=0 b=1 c=3 -> Especificidad = 13 */
+footer a img{
+    display: inline;
+}
