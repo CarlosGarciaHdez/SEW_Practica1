@@ -60,7 +60,7 @@ td {
 
 /* a=0 b=0 c=1 -> Especificidad = 1 */
 th {
-    background-color: darkgreen;
+    background-color: black;
     color: #fff;
 }
 
