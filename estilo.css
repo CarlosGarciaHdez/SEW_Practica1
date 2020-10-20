@@ -55,9 +55,7 @@ td {
 /* a=0 b=0 c=1 -> Especificidad = 1 */
 th,
 td {
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
 }
 
 /* a=0 b=0 c=1 -> Especificidad = 1 */
@@ -69,6 +67,7 @@ th {
 /* a=0 b=0 c=3 -> Especificidad = 3 */
 nav {
     background-color: darkgreen;
+    color: white;
     border: 3px solid black;
     padding: 5px;
 }
@@ -138,6 +137,7 @@ footer a:hover{
 /* a=0 b=0 c=1 -> Especificidad = 1 */
 footer{
     background-color: #303030;
+    color: white;
     padding: 10px;
     border: 5px solid black;
     text-align: right;
